@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bigcontainer{
+            height: 400px;
+            width: 700px;
+            /* border: 2px solid; */
+            margin: auto;
+            align-content: center;
+        }
+        .packman1{
+            height: 40px;
+            width: 85px;
+            /* border: 2px solid; */
+            border-radius: 50px 50px 0px 0px;
+            animation-name: hello1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            background-color: red;
+            position: relative;
+            z-index: 2;
+
+        }
+        .packman2{
+            height: 40px;
+            width: 85px;
+            /* border: 2px solid; */
+            border-radius: 0px 0px 50px 50px;
+            animation-name: hello2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            background-color: red;
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes hello1{
+            0%{
+                transform: rotate(-60deg);
+            }
+            50%
+            {
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes hello2{
+            0%{
+                transform: rotate(60deg);
+            }
+            50%
+            {
+                transform: rotate(0deg);
+            }
+        }
+        .dots{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            /* border: 2px solid; */
+            background-color: yellow;
+            animation-name: dotted;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            position: absolute;
+            margin-top: 48px;
+        }
+        #dotts{
+            height: 100px;
+            width: 600px;
+            /* border: 2px solid; */
+            margin-top: -100px;
+
+        }
+        @keyframes dotted {
+            0%{
+                transform: translate(400px);
+            }
+            50%
+            {
+                transform: translate(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="bigcontainer">
+        <div class="packman1"></div>
+        <div class="packman2"></div>
+       <section id="dotts">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        </section>
+    </section>
+</body>
+</html>
